@@ -38,7 +38,7 @@ body,h1,h2,h3,h4,h5,h6,a,span,p{
     font-family: 'Work Sans', sans-serif;
 }
 .bg{
-    background-color: #cac9ce;
+    background-color: #f8f8f8;
 }
 ul{
     list-style: none;
@@ -48,7 +48,7 @@ ul{
 /* ======== Header Section CSS ======== */
 
 .header-slider{
-    background-image: url(./img/photography-slider-01-1024x400.jpg);
+    background-image: url(./img/ia_200000019.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,11 +63,11 @@ ul{
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(27, 44, 19, 0.7);
+    background-color: rgba(0, 0, 0, .7);
     z-index: -1;
 }
 .header{
-    background-color: rgba(246, 242, 242, 0.4);
+    background-color: rgba(0, 0, 0, .4);
     position: absolute;
     width: 100%;
     top: 0;
@@ -78,9 +78,6 @@ ul{
 }
 .header-right{
     width: 70%;
-}
-.header-logo img{
-    height: 80px;
 }
 
 /* ======== Menu Section CSS ======== */
@@ -98,15 +95,15 @@ ul{
     line-height: 42px;
 }
 .header-menu ul li:hover > a{
-    color: #ff4b17;
+    color: #c69453;
 }
 .header-menu ul li a::after {
     content: "";
     position: absolute;
-    background-color: #ff4b17;
+    background-color: #c69453;
     width: 0%;
     height: 5%;
-    bottom: -25%;
+    bottom: -10%;
     left: 50%;
     right: 50%;
     transition: .7s;
@@ -117,7 +114,7 @@ ul{
     right: 0%;
 }
 .home{
-    color: #ff4b17 !important;
+    color: #c69453 !important;
 }
 
 /* ======== DropDown Menu CSS ======== */
@@ -162,7 +159,7 @@ ul{
 
 .slider-content h1 {
     color: white;
-    font-size: 60px;
+    font-size: 80px;
     margin-bottom: 10px;
 }
 .slider-content h3 {
@@ -176,8 +173,8 @@ ul{
     content: "";
     position: absolute;
     width: 8%;
-    height: 5%;
-    left: 15%;
+    height: 3%;
+    left: 21%;
     bottom: 41%;
     background-color: #fff;
 }
@@ -185,21 +182,21 @@ ul{
     content: "";
     position: absolute;
     width: 8%;
-    height: 5%;
-    right: 15%;
+    height: 3%;
+    right: 21%;
     bottom: 41%;
     background-color: #fff;
 }
 .slider-content span a{
     display: inline-block;
     color: white;
-    background-color: #ff4b17;
+    background-color: #c69453;
     padding: 15px 40px;
     border-radius: 40px;
     transition: .4s;
 }
 .slider-content span a:hover{
-    color: #ff4b17;
+    color: #c69453;
     background-color: white;
 }
 
@@ -223,12 +220,10 @@ ul{
     background-color: #e2e2df;
 }
 .si-image img {
-    width: 100px;
-    height: 100px;
     background-color: #fff;
     margin-bottom: 50px;
-    transition: .5s;
     border-radius: 50%;
+    transition: .5s;
 }
 .si-content h4{
     font-weight: 600;
@@ -240,7 +235,7 @@ ul{
 .si-content span a{
     display: inline-block;
     color: #fff;
-    background-color: #ff4b17;
+    background-color: #c69453;
     padding: 10px 20px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -255,7 +250,7 @@ ul{
     transform: rotateY(360deg);
 }
 .service-item:hover .si-content span a{
-    color: #ff4b17;
+    color: #c69453;
     background-color: #fff;
 }
 
@@ -274,7 +269,7 @@ ul{
     font-size: 45px;
 }
 .about-content h1 span{
-    color: #ff4b17;
+    color: #c69453;
 }
 .about-content p {
     margin-bottom: 30px;
@@ -286,19 +281,19 @@ ul{
     padding: 10px 20px;
     margin-top: 20px;
     transition: .5s;
-    border-radius: 10px;
 }
 .about-content span a:hover{
-    background-color: #ff4b17;
+    background-color: #c69453
 }
 
 /* ======== Contact Section CSS ======== */
 
 .contact{
-    background-image: url(./img/home-suit-shop-removebg-preview.png);
+    background-image: url(./img/ia_200000022.jpg);
     background-position: right;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+
 }
 .contact-left{
     width: 50%;
@@ -325,31 +320,21 @@ ul{
 }
 .contact-form form span a{
     display: inline-block;
-    color: #fff;
-    background-color: #ff4b17;
+    color: white;
+    background-color: #c69453;
     padding: 15px;
-    border-radius: 5px;
-    transition: .4s;
-}
-.contact-form form span a:hover{
-    color: #ff4b17;
-    background-color: rgba(35, 151, 14, .8);
 }
 
 /* ======== Footer Section CSS ======== */
 
 .footer{
     background-color: #6d6d6d;
+    color: #ddd;
     padding: 30px 0;
 }
 .footer-left{
     width: 60%;
     margin-left: 80px;
-}
-.footer-left p{
-    color: rgb(23, 22, 82);
-    font-weight: 700;
-    line-height: 50px;
 }
 .footer-right{
     width: 30%;
@@ -359,11 +344,6 @@ ul{
 }
 .footer-right nav ul li a {
     display: inline-block;
-    color: rgb(31, 22, 80);
-    font-size: 30px;
+    color: #ddd;
     padding: 0 15px;
-    transition: .4s;
-}
-.footer-right nav ul li a:hover{
-    color: #ff4b17;
 }
