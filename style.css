@@ -1,0 +1,369 @@
+/* ======== Default Style CSS ======== */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+body,h1,h2,h3,h4,h5,h6,a,span,p{
+    font-family: 'Work Sans', sans-serif;
+}
+.bg{
+    background-color: #cac9ce;
+}
+ul{
+    list-style: none;
+    margin: 0;
+}
+
+/* ======== Header Section CSS ======== */
+
+.header-slider{
+    background-image: url(./img/photography-slider-01-1024x400.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+    position: relative;
+    z-index: 9;
+}
+.header-slider::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(27, 44, 19, 0.7);
+    z-index: -1;
+}
+.header{
+    background-color: rgba(246, 242, 242, 0.4);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header-left{
+    width: 30%;
+}
+.header-right{
+    width: 70%;
+}
+.header-logo img{
+    height: 80px;
+}
+
+/* ======== Menu Section CSS ======== */
+
+.header-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.header-menu ul li a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    transition: .5s;
+    line-height: 42px;
+}
+.header-menu ul li:hover > a{
+    color: #ff4b17;
+}
+.header-menu ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: #ff4b17;
+    width: 0%;
+    height: 5%;
+    bottom: -25%;
+    left: 50%;
+    right: 50%;
+    transition: .7s;
+}
+.header-menu ul li a:hover::after{
+    width: 100%;
+    left: 0%;
+    right: 0%;
+}
+.home{
+    color: #ff4b17 !important;
+}
+
+/* ======== DropDown Menu CSS ======== */
+
+.header-menu ul li ul{
+    position: absolute;
+    width: 200px;
+    top: 100%;
+    left: 0;
+    padding-left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: center;
+    transition: .3s;
+}
+.header-menu ul li ul li{
+    display: block;
+    
+}
+.header-menu ul li ul li a{
+    display: block;
+    color: #000;
+    background-color: #fff;
+    padding: 20px 0;
+    transition: .5s;
+    line-height: normal;
+}
+.header-menu ul li ul li a:hover{
+    background-color: #c0c0bf;
+}
+.header-menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.header-menu ul li ul li a:hover::after{
+    width: 0;
+}
+
+/* ======== Slider Section CSS =======  */
+
+.slider-content h1 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.slider-content h3 {
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    position: relative;
+}
+.slider-content h3::before {
+    content: "";
+    position: absolute;
+    width: 8%;
+    height: 5%;
+    left: 15%;
+    bottom: 41%;
+    background-color: #fff;
+}
+.slider-content h3::after {
+    content: "";
+    position: absolute;
+    width: 8%;
+    height: 5%;
+    right: 15%;
+    bottom: 41%;
+    background-color: #fff;
+}
+.slider-content span a{
+    display: inline-block;
+    color: white;
+    background-color: #ff4b17;
+    padding: 15px 40px;
+    border-radius: 40px;
+    transition: .4s;
+}
+.slider-content span a:hover{
+    color: #ff4b17;
+    background-color: white;
+}
+
+/* ======== Service Section CSS ======= */
+
+.service{
+    padding-top: 80px;
+}
+.service-item{
+    width: 23%;
+    margin-left: 2%;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px;
+    transition: .5s;
+}
+.service-item:nth-child(1){
+    margin-left: 0;
+}
+.service-item:hover{
+    background-color: #e2e2df;
+}
+.si-image img {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    transition: .5s;
+    border-radius: 50%;
+}
+.si-content h4{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.si-content p{
+    margin-bottom: 30px;
+}
+.si-content span a{
+    display: inline-block;
+    color: #fff;
+    background-color: #ff4b17;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: .4s;
+}
+.si-content span a:hover{
+    color: #fff !important;
+    background-color: black !important;
+    transform: translateY(10px);
+}
+.service-item:hover .si-image img{
+    transform: rotateY(360deg);
+}
+.service-item:hover .si-content span a{
+    color: #ff4b17;
+    background-color: #fff;
+}
+
+/* ======== About Section CSS ======== */
+
+.about{
+    margin-top: 200px;
+}
+.about-left{
+    width: 48%;
+}
+.about-right{
+    width: 48%;
+}
+.about-content h1{
+    font-size: 45px;
+}
+.about-content h1 span{
+    color: #ff4b17;
+}
+.about-content p {
+    margin-bottom: 30px;
+}
+.about-content span a{
+    display: inline-block;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: .5s;
+    border-radius: 10px;
+}
+.about-content span a:hover{
+    background-color: #ff4b17;
+}
+
+/* ======== Contact Section CSS ======== */
+
+.contact{
+    background-image: url(./img/home-suit-shop-removebg-preview.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.contact-left{
+    width: 50%;
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+.tontact-content h1{
+    margin-bottom: 30px;
+}
+.contact-form{
+    margin-top: 30px;
+}
+.contact-form form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+}
+.contact-form form textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px;
+}
+.contact-form form span a{
+    display: inline-block;
+    color: #fff;
+    background-color: #ff4b17;
+    padding: 15px;
+    border-radius: 5px;
+    transition: .4s;
+}
+.contact-form form span a:hover{
+    color: #ff4b17;
+    background-color: rgba(35, 151, 14, .8);
+}
+
+/* ======== Footer Section CSS ======== */
+
+.footer{
+    background-color: #6d6d6d;
+    padding: 30px 0;
+}
+.footer-left{
+    width: 60%;
+    margin-left: 80px;
+}
+.footer-left p{
+    color: rgb(23, 22, 82);
+    font-weight: 700;
+    line-height: 50px;
+}
+.footer-right{
+    width: 30%;
+}
+.footer-right nav ul li{
+    display: inline-block;
+}
+.footer-right nav ul li a {
+    display: inline-block;
+    color: rgb(31, 22, 80);
+    font-size: 30px;
+    padding: 0 15px;
+    transition: .4s;
+}
+.footer-right nav ul li a:hover{
+    color: #ff4b17;
+}
